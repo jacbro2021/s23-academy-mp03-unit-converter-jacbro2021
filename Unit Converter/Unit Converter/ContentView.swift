@@ -55,12 +55,12 @@ struct ContentView_Previews: PreviewProvider {
 
 struct LengthInputView : View {
     
-    @State var input: String = ""
-    @State var unit: String = "Meters"
-    @State var outputUnitChoice = "Meters"
+    @State private var input: String = ""
+    @State private var unit: String = "Meters"
+    @State private var outputUnitChoice = "Meters"
     @FocusState private var inputFocus: Bool
-    let lengthUnits = ["Meters", "Km", "Feet", "Yards", "Miles"]
-    let outputUnits = ["Meters", "Km", "Feet", "Yards", "Miles"]
+    private let lengthUnits = ["Meters", "Km", "Feet", "Yards", "Miles"]
+    private let outputUnits = ["Meters", "Km", "Feet", "Yards", "Miles"]
     
     var body: some View {
         NavigationView {
@@ -163,12 +163,12 @@ struct LengthOutputView : View {
 
 struct TemperatureInputView : View {
     
-    @State var input: String = ""
-    @State var unit: String = "Celsius"
-    @State var outputUnitChoice = "Celsius"
+    @State private var input: String = ""
+    @State private var unit: String = "Celsius"
+    @State private var outputUnitChoice = "Celsius"
     @FocusState private var inputFocus: Bool
-    let lengthUnits = ["Celsius", "Fahrenheit", "Kelvin"]
-    let outputUnits = ["Celsius", "Fahrenheit", "Kelvin"]
+    private let lengthUnits = ["Celsius", "Fahrenheit", "Kelvin"]
+    private let outputUnits = ["Celsius", "Fahrenheit", "Kelvin"]
     
     var body: some View {
         NavigationView {
@@ -263,12 +263,12 @@ struct TemperatureOutputView : View {
 
 struct TimeInputView : View {
     
-    @State var input: String = ""
-    @State var unit: String = "Seconds"
-    @State var outputUnitChoice = "Seconds"
+    @State private var input: String = ""
+    @State private var unit: String = "Seconds"
+    @State private var outputUnitChoice = "Seconds"
     @FocusState private var inputFocus: Bool
-    let lengthUnits = ["Seconds", "Minutes", "Hours", "Days"]
-    let outputUnits = ["Seconds", "Minutes", "Hours", "Days"]
+    private let lengthUnits = ["Seconds", "Minutes", "Hours", "Days"]
+    private let outputUnits = ["Seconds", "Minutes", "Hours", "Days"]
     
     var body: some View {
         NavigationView {
@@ -367,9 +367,9 @@ struct TimeOutputView : View {
 
 struct VolumeInputView : View {
     
-    @State var input: String = ""
-    @State var unit: String = "mL"
-    @State var outputUnitChoice = "mL"
+    @State private var input: String = ""
+    @State private var unit: String = "mL"
+    @State private var outputUnitChoice = "mL"
     @FocusState private var inputFocus: Bool
     let lengthUnits = ["mL", "Liters", "Cups", "Pints", "Gallons"]
     let outputUnits = ["mL", "Liters", "Cups", "Pints", "Gallons"]
